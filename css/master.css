@@ -118,17 +118,16 @@ p {
   .holder section {
     box-sizing: border-box;
     padding: 2rem; }
-  .holder .profile, .holder .skills {
+  .holder .profile {
     width: 100%; }
   .holder .skills {
-    width: 100%;
-    margin: 0 auto; }
+    width: 95%; }
   .holder .main {
     width: 100%; }
     .holder .main h4:first-child {
       margin-top: 0; }
   @media only screen and (min-width: 960px) {
-    .holder .profile, .holder .skills {
+    .holder .profile {
       width: 25%; }
     .holder .skills {
       width: 20%; }
@@ -169,8 +168,11 @@ ul {
 
 .skills {
   background: #f8f8f8;
-  margin-top: 4rem;
+  margin: 0 auto;
   border-radius: 0.5rem; }
+  @media only screen and (min-width: 960px) {
+    .skills {
+      margin: 4rem !important; } }
   .skills h2:first-child {
     margin-top: 0; }
   .skills ul {
