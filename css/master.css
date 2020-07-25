@@ -114,6 +114,7 @@ p {
     .holder {
       display: flex;
       width: 90%;
+      justify-content: space-between;
       margin: 2rem auto; } }
   .holder section {
     box-sizing: border-box;
@@ -133,7 +134,7 @@ p {
       width: 20%; }
     .holder .main {
       width: 55%;
-      padding: 2rem 5rem 2rem 3rem; }
+      padding: 2rem 3rem; }
       .holder .main h4:first-child {
         margin-top: 4rem; } }
 
@@ -172,7 +173,7 @@ ul {
   border-radius: 0.5rem; }
   @media only screen and (min-width: 960px) {
     .skills {
-      margin: 4rem !important; } }
+      margin: 3.5rem 0 0 0 !important; } }
   .skills h2:first-child {
     margin-top: 0; }
   .skills ul {
