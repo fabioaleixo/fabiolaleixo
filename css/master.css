@@ -14,7 +14,7 @@ body {
 
 h1 {
   font-family: "Major Mono Display";
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: #00939c;
   font-weight: 400;
   margin: 0;
@@ -22,9 +22,9 @@ h1 {
   box-sizing: border-box;
   padding: 1rem 1rem 0 1rem; }
   h1 span {
-    font-size: 1.5rem;
+    font-size: 2rem;
     display: block;
-    margin: 1rem 0 0; }
+    margin: 2rem 0 0; }
 
 h2 {
   font-family: "Fira Code";
@@ -140,8 +140,12 @@ p {
 
 .profile img {
   border-radius: 200px;
-  width: 100%;
+  width: 70%;
+  display: block;
   margin: 0 auto 1rem; }
+  @media only screen and (min-width: 960px) {
+    .profile img {
+      width: 100%; } }
 
 .spacer {
   height: 1rem; }
