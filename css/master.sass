@@ -237,23 +237,34 @@ footer
     width: 80%
     margin: 4rem auto
     padding: 1.5rem
+    justify-content: center
     font-size: 1.5rem
     background-color: $primary-light
+    align-items: center
+    i
+        margin: 0 1rem 0 0
     @media only screen and (min-width: $break-mobile)
-        display: block
-        width: 150px
-        padding: 1rem
-        text-align: center
+        display: flex
+        width: 60px
+        height: 60px
+        padding: 0
         font-size: 1rem
         margin: -1rem auto 5rem
+        i
+            margin: 0
+        span
+            display: none
         &:hover
             background: $primary-dark
 
 .btn-skills
     margin: 4rem 0 0
     padding: 1.5rem
+    justify-content: center
     font-size: 1.5rem
     background-color: $primary-light
+    i
+        margin: 0 1rem 0 0
     @media only screen and (min-width: $break-mobile)
         display: none
 
