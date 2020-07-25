@@ -226,20 +226,26 @@ ul {
     padding: 0;
     list-style-position: inside; }
 .main figure {
-  width: 90%;
+  width: 130%;
   display: block;
   margin: 1rem auto 2rem;
   border-radius: 1rem;
   padding: 2rem 1.5rem 1.5rem;
   box-sizing: border-box;
-  opacity: 1; }
+  opacity: 1;
+  margin-left: calc(0rem - 15%); }
+  @media only screen and (min-width: 960px) {
+    .main figure {
+      width: 85%;
+      margin-left: auto; } }
   .main figure:hover {
     opacity: 0.8; }
   .main figure img {
     width: 100%; }
   .main figure figcaption {
     margin: 1rem 0 0;
-    text-align: center; }
+    text-align: center;
+    font-size: 1.5rem; }
 .main .cards {
   display: flex;
   flex-wrap: wrap;

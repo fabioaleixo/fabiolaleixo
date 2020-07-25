@@ -198,7 +198,7 @@ ul
             +text-base($text-font,1.2rem,$text-color,400,.5rem 0 0 1rem,0,0)
             list-style-position: inside
     figure
-        width: 90%
+        width: 130%
         display: block
         margin: 1rem auto 2rem
         @extend %prop-transition
@@ -206,6 +206,10 @@ ul
         padding: 2rem 1.5rem 1.5rem
         box-sizing: border-box
         opacity: 1
+        margin-left: calc(0rem - 15%)
+        @media only screen and (min-width: $break-mobile)
+            width: 85%
+            margin-left: auto
         &:hover
             opacity: .8
         img
@@ -213,6 +217,7 @@ ul
         figcaption
             margin: 1rem 0 0
             text-align: center
+            font-size: 1.5rem
     .cards
         display: flex
         flex-wrap: wrap
