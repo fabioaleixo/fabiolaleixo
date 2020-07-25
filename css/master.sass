@@ -191,34 +191,56 @@ ul
                     font-size: 1.5rem
                     vertical-align: middle
 
-.cards
-    display: flex
-    flex-wrap: wrap
-    justify-content: space-between
-    .card
-        width: 100%
-        padding: 1.5rem
+.main
+    ul
+        list-style: square
+        li
+            +text-base($text-font,1.2rem,$text-color,400,.5rem 0 0 1rem,0,0)
+            list-style-position: inside
+    figure
+        width: 90%
+        display: block
+        margin: 1rem auto 2rem
+        @extend %prop-transition
+        border-radius: 1rem
+        padding: 2rem 1.5rem 1.5rem
         box-sizing: border-box
-        border: 1px #ccc solid
-        border-radius: .5rem
-        margin: 1rem 0 3rem
-        @media only screen and (min-width: $break-desktop-small)
-            width: 47%
-            margin: 1rem 0 2rem
-        p
-            margin: .5rem 0
-        hr
-            height: .01rem
-            background: transparent
-            border: 0
-            border-top: .01rem $primary-dark solid
-            margin: 2rem 0
-        ul
-            list-style: square
-            margin: 0 0 0 .5rem
-            li
-                +text-base($text-font,1.2rem,$text-color,400,2rem 0,0,0)
-                margin: .5rem
+        opacity: 1
+        &:hover
+            opacity: .8
+        img
+            width: 100%
+        figcaption
+            margin: 1rem 0 0
+            text-align: center
+    .cards
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        .card
+            width: 100%
+            padding: 1.5rem
+            box-sizing: border-box
+            border: 1px #ccc solid
+            border-radius: .5rem
+            margin: 1rem 0 3rem
+            @media only screen and (min-width: $break-desktop-small)
+                width: 47%
+                margin: 1rem 0 2rem
+            p
+                margin: .5rem 0
+            hr
+                height: .01rem
+                background: transparent
+                border: 0
+                border-top: .01rem $primary-dark solid
+                margin: 2rem 0
+            ul
+                list-style: square
+                margin: 0 0 0 .5rem
+                li
+                    +text-base($text-font,1.2rem,$text-color,400,2rem 0,0,0)
+                    margin: .5rem
 
 header
     background: $primary-dark

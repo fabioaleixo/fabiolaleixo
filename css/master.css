@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Major+Mono+Display&family=PT+Sans+Narrow:wght@400;700&display=swap");
-a, .showit, .btn {
+a, .showit, .btn, .main figure {
   transition: all 0.2s ease-in; }
 
 .profile img {
@@ -213,11 +213,38 @@ ul {
           font-size: 1.5rem;
           vertical-align: middle; }
 
-.cards {
+.main ul {
+  list-style: square; }
+  .main ul li {
+    font-family: "PT Sans Narrow";
+    font-size: 1.2rem;
+    color: #999;
+    font-weight: 400;
+    margin: 0.5rem 0 0 1rem;
+    border-bottom: 0;
+    box-sizing: border-box;
+    padding: 0;
+    list-style-position: inside; }
+.main figure {
+  width: 90%;
+  display: block;
+  margin: 1rem auto 2rem;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem 1.5rem;
+  box-sizing: border-box;
+  opacity: 1; }
+  .main figure:hover {
+    opacity: 0.8; }
+  .main figure img {
+    width: 100%; }
+  .main figure figcaption {
+    margin: 1rem 0 0;
+    text-align: center; }
+.main .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; }
-  .cards .card {
+  .main .cards .card {
     width: 100%;
     padding: 1.5rem;
     box-sizing: border-box;
@@ -225,21 +252,21 @@ ul {
     border-radius: 0.5rem;
     margin: 1rem 0 3rem; }
     @media only screen and (min-width: 1200px) {
-      .cards .card {
+      .main .cards .card {
         width: 47%;
         margin: 1rem 0 2rem; } }
-    .cards .card p {
+    .main .cards .card p {
       margin: 0.5rem 0; }
-    .cards .card hr {
+    .main .cards .card hr {
       height: 0.01rem;
       background: transparent;
       border: 0;
       border-top: 0.01rem #006167 solid;
       margin: 2rem 0; }
-    .cards .card ul {
+    .main .cards .card ul {
       list-style: square;
       margin: 0 0 0 0.5rem; }
-      .cards .card ul li {
+      .main .cards .card ul li {
         font-family: "PT Sans Narrow";
         font-size: 1.2rem;
         color: #999;
