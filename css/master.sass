@@ -73,11 +73,14 @@ p
 .showit
     background: $primary-dark
     color: $contrast-color
+    text-align: center
     padding: 1rem
     font-size: 1.4rem
-    text-align: center
     border-radius: .5rem
-
+    @extend %prop-transition
+    &:hover
+        background: $primary-light
+        
 .btn
     display: flex
     justify-content: center
@@ -86,6 +89,7 @@ p
     align-items: center
     background: $primary-color
     color: $contrast-color
+    @extend %prop-transition
     &:hover
         background: $primary-light
         color: $contrast-color

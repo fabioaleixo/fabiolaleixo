@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Major+Mono+Display&family=PT+Sans+Narrow:wght@400;700&display=swap");
-a {
+a, .showit, .btn {
   transition: all 0.2s ease-in; }
 
 .profile img {
@@ -86,10 +86,12 @@ p {
 .showit {
   background: #006167;
   color: #fff;
+  text-align: center;
   padding: 1rem;
   font-size: 1.4rem;
-  text-align: center;
   border-radius: 0.5rem; }
+  .showit:hover {
+    background: #00c6d2; }
 
 .btn {
   display: flex;
