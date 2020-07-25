@@ -268,4 +268,10 @@ footer {
     .btn-skills {
       display: none; } }
 
+.font-adjust {
+  font-size: 1rem; }
+  @media only screen and (min-width: 960px) {
+    .font-adjust {
+      font-size: 1.2rem; } }
+
 /*# sourceMappingURL=master.css.map */
