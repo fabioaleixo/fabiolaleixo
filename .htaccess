@@ -1,3 +1,8 @@
+##### LOCAWEB - NAO REMOVER #####
+AddHandler php73-script .php
+suPHP_ConfigPath /home/fabioaleixodev1/
+##### LOCAWEB - NAO REMOVER #####
+
 RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://www.seudominio/$1 [R,L]
