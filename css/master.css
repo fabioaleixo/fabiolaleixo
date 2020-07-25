@@ -230,7 +230,7 @@ ul {
     border-bottom: 0;
     box-sizing: border-box;
     padding: 0;
-    list-style-position: inside; }
+    list-style-position: outside; }
 .main figure {
   width: 130%;
   display: block;
