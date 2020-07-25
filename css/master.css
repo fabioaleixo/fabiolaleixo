@@ -145,7 +145,7 @@ p {
   margin: 0 auto 1rem; }
   @media only screen and (min-width: 960px) {
     .profile img {
-      width: 100%; } }
+      width: 90%; } }
 
 .spacer {
   height: 1rem; }
@@ -244,7 +244,7 @@ footer {
   footer p {
     font-family: "PT Sans Narrow";
     font-size: 1rem;
-    color: #00c6d2;
+    color: #fff;
     font-weight: 400;
     margin: 0;
     border-bottom: 0;
