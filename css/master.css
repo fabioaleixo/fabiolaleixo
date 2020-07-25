@@ -159,6 +159,12 @@ ul {
   ul li {
     margin: 1rem 0; }
 
+.contacts {
+  font-size: 1.5rem;
+  display: block;
+  padding: 0;
+  margin: 1rem 0; }
+
 .social {
   display: flex;
   justify-content: space-between;
@@ -345,5 +351,12 @@ footer {
   @media only screen and (min-width: 960px) {
     .font-adjust {
       font-size: 1.2rem; } }
+
+@media only screen and (min-width: 960px) {
+  .case {
+    display: none; } }
+
+.spacer {
+  height: 0.1rem; }
 
 /*# sourceMappingURL=master.css.map */
