@@ -352,11 +352,9 @@ footer {
     .font-adjust {
       font-size: 1.2rem; } }
 
-.case {
-  justify-content: center; }
-  @media only screen and (min-width: 960px) {
-    .case {
-      display: none; } }
+@media only screen and (min-width: 960px) {
+  .case {
+    display: none; } }
 
 .spacer {
   height: 0.1rem; }
