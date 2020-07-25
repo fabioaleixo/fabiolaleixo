@@ -171,8 +171,10 @@ ul
         list-style: square
         margin: 0 0 0 .5rem
         li
-            +text-base($text-font,1rem,$text-color,400,2rem 0,0,0)
+            +text-base($text-font,1.2rem,$text-color,400,2rem 0,0,0)
             margin: .5rem
+            @media only screen and (min-width: $break-mobile)
+                font-size: 1rem
         &.list-none
             list-style: none
             i

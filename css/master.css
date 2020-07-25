@@ -184,7 +184,7 @@ ul {
     margin: 0 0 0 0.5rem; }
     .skills ul li {
       font-family: "PT Sans Narrow";
-      font-size: 1rem;
+      font-size: 1.2rem;
       color: #999;
       font-weight: 400;
       margin: 2rem 0;
@@ -192,6 +192,9 @@ ul {
       box-sizing: border-box;
       padding: 0;
       margin: 0.5rem; }
+      @media only screen and (min-width: 960px) {
+        .skills ul li {
+          font-size: 1rem; } }
     .skills ul.list-none {
       list-style: none; }
       .skills ul.list-none i {
