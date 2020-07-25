@@ -92,6 +92,8 @@ p {
   border-radius: 0.5rem; }
   .showit:hover {
     background: #00c6d2; }
+  .showit i {
+    font-size: 1.5rem; }
 
 .btn {
   display: flex;
@@ -105,7 +107,8 @@ p {
     background: #00c6d2;
     color: #fff; }
   .btn i {
-    margin-right: 0.5rem; }
+    margin-right: 0.5rem;
+    font-size: 1.5em; }
 
 .holder {
   display: block;
@@ -159,14 +162,19 @@ ul {
 .social {
   display: flex;
   justify-content: space-between;
-  max-width: 50%; }
+  max-width: 65%; }
+  @media only screen and (min-width: 960px) {
+    .social {
+      max-width: 50%; } }
   .social li {
     margin: 0; }
     .social li a {
       padding: 0; }
       .social li a i {
-        font-size: 2rem;
-        display: block; }
+        font-size: 2.5rem; }
+        @media only screen and (min-width: 960px) {
+          .social li a i {
+            font-size: 2rem; } }
 
 .skills {
   background: #f8f8f8;
