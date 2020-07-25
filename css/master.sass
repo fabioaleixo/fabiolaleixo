@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Major+Mono+Display&family=PT+Sans+Narrow:wght@400;700&display=swap')
+
+$main-font: 'Major Mono Display'
+$heading-font: 'Fira Code'
+$text-font: 'PT Sans Narrow'
+
+$primary-color: #00939c
+$primary-dark: #006167
+$primary-light: #00c6d2
+$secondary-color: #a9007f
+$secondary-dark: #7c005d
+$secondary-light: #da00a4
+$text-color: #999
+$shadow-color: #999
+$contrast-color: #fff
+
+$break-mobile: 960px
+$break-desktop-small: 1200px
+
+%prop-transition
+    transition: all .2s ease-in
+
+%prop-shadow
+    -webkit-box-shadow: 0 0 10px 0 #999999
+    box-shadow: 0 0 10px 0 #999999
+    border: .3rem #f8f8f8 solid
+    box-sizing: border-box
+    
+body
+    margin: 0
+    font-size: 10px
+
+=text-base($family,$size,$color,$weight,$margin,$padding,$border)
+    font-family: $family
+    font-size: $size
+    color: $color
+    font-weight: $weight
+    margin: $margin
+    border-bottom: $border
+    box-sizing: border-box
+    padding: $padding
+
+h1
+    +text-base($main-font,3rem,$primary-color,400,0,1rem 1rem 0 1rem,0)
+    span
+        font-size: 1.5rem
+        display: block
+        margin: 1rem 0 0
+
+h2
+    +text-base($heading-font,1.5rem,$primary-color,400,3rem 0 2rem,0 0 .5rem,.05rem $primary-dark solid)
+    letter-spacing: -0.05rem
+
+h3
+    +text-base($heading-font,1.2rem,$primary-color,400,3rem 0 1rem,0 0 .5rem,0)
+
+h4
+    +text-base($heading-font,1.5rem,$primary-color,400,4rem 0 2rem,0 0 .5rem,0)
+
+a
+    +text-base($text-font,1.2rem,$primary-color,400,1rem 0,.5rem 0,0)
+    text-decoration: none
+    @extend %prop-transition
+    letter-spacing: .07rem
+    &:hover
+        color: $primary-light
+
+p
+    +text-base($text-font,1.2rem,$text-color,400,2rem 0,0,0)
+    line-height: 1.8rem
+    letter-spacing: .07rem
+
+.showit
+    background: $primary-dark
+    color: $contrast-color
+    padding: 1rem
+    font-size: 1.4rem
+    text-align: center
+    border-radius: .5rem
+
+.btn
+    display: flex
+    justify-content: center
+    border-radius: .5rem
+    text-align: center
+    align-items: center
+    background: $primary-color
+    color: $contrast-color
+    &:hover
+        background: $primary-light
+        color: $contrast-color
+    i
+        margin-right: .5rem
+
+.holder
+    display: block
+    width: 95%
+    max-width: 1600px
+    margin: 0 auto 2rem
+    @media only screen and (min-width: $break-mobile)
+        display: flex
+        width: 90%
+        margin: 2rem auto
+    section
+        box-sizing: border-box
+        padding: 2rem
+    .profile, .skills
+        width: 100%
+    .skills
+        width: 100%
+        margin: 0 auto
+    .main
+        width: 100%
+        h4:first-child
+            margin-top: 0
+    @media only screen and (min-width: $break-mobile)
+        .profile, .skills
+            width: 25%
+        .skills
+            width: 20%
+        .main
+            width: 55%
+            padding: 2rem 5rem 2rem 3rem
+            h4:first-child
+                margin-top: 4rem
+
+.profile
+    img
+        border-radius: 200px
+        width: 100%
+        @extend %prop-shadow
+        margin: 0 auto 1rem
+
+.spacer
+    height: 1rem
+
+ul
+    list-style: none
+    margin: 0
+    padding: 0
+    li
+        margin: 1rem 0
+
+.social
+    display: flex
+    justify-content: space-between
+    max-width: 60%
+    li
+        margin: 0
+        i
+            font-size: 2rem
+            display: block
+
+.skills
+    background: #f8f8f8
+    margin-top: 4rem
+    border-radius: .5rem
+    h2:first-child
+        margin-top: 0
+    ul
+        list-style: square
+        margin: 0 0 0 .5rem
+        li
+            +text-base($text-font,1rem,$text-color,400,2rem 0,0,0)
+            margin: .5rem
+        &.list-none
+            list-style: none
+            i
+                margin: 0 .5rem 0 -1rem 
+                width: 1.5rem
+
+.cards
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    .card
+        width: 100%
+        padding: 1.5rem
+        box-sizing: border-box
+        border: 1px #ccc solid
+        border-radius: .5rem
+        margin: 0 0 2rem
+        @media only screen and (min-width: $break-desktop-small)
+            width: 47%
+            margin: 2rem 0
+        p
+            margin: .5rem 0
+        hr
+            height: .01rem
+            background: transparent
+            border: 0
+            border-top: .01rem $primary-dark solid
+            margin: 2rem 0
+        ul
+            list-style: square
+            margin: 0 0 0 .5rem
+            li
+                +text-base($text-font,1.2rem,$text-color,400,2rem 0,0,0)
+                margin: .5rem
+
+header
+    background: $primary-dark
+    height: .5rem
+
+footer
+    background: $primary-dark
+    box-sizing: border-box
+    margin: 4rem 0 0
+    padding: 2rem 3.5rem
+    p
+        +text-base($text-font,1rem,$primary-light,400,0,0,0)
+        text-align: center
+
+.btn-btt
+    width: 80%
+    margin: 4rem auto
+    @media only screen and (min-width: $break-mobile)
+        display: none
+
+.btn-skills
+    margin: 4rem 0 0
+    @media only screen and (min-width: $break-mobile)
+        display: none
