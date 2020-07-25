@@ -62,10 +62,10 @@ a {
   font-size: 1.2rem;
   color: #00939c;
   font-weight: 400;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
   border-bottom: 0;
   box-sizing: border-box;
-  padding: 0.5rem 0;
+  padding: 1rem 0;
   text-decoration: none;
   letter-spacing: 0.07rem; }
   a:hover {
@@ -95,11 +95,11 @@ p {
 
 .btn {
   display: flex;
-  justify-content: center;
   border-radius: 0.5rem;
-  text-align: center;
   align-items: center;
+  box-sizing: border-box;
   background: #00939c;
+  padding-left: 1rem;
   color: #fff; }
   .btn:hover {
     background: #00c6d2;
@@ -149,9 +149,6 @@ p {
     .profile img {
       width: 90%; } }
 
-.spacer {
-  height: 1rem; }
-
 ul {
   list-style: none;
   margin: 0;
@@ -165,9 +162,11 @@ ul {
   max-width: 60%; }
   .social li {
     margin: 0; }
-    .social li i {
-      font-size: 2rem;
-      display: block; }
+    .social li a {
+      padding: 0; }
+      .social li a i {
+        font-size: 2rem;
+        display: block; }
 
 .skills {
   background: #f8f8f8;

@@ -58,7 +58,7 @@ h4
     +text-base($heading-font,2rem,$primary-color,400,4rem 0 2rem,0 0 .5rem,0)
 
 a
-    +text-base($text-font,1.2rem,$primary-color,400,1rem 0,.5rem 0,0)
+    +text-base($text-font,1.2rem,$primary-color,400,1.5rem 0,1rem 0,0)
     text-decoration: none
     @extend %prop-transition
     letter-spacing: .07rem
@@ -83,11 +83,11 @@ p
         
 .btn
     display: flex
-    justify-content: center
     border-radius: .5rem
-    text-align: center
     align-items: center
+    box-sizing: border-box
     background: $primary-color
+    padding-left: 1rem
     color: $contrast-color
     @extend %prop-transition
     &:hover
@@ -138,9 +138,6 @@ p
         @media only screen and (min-width: $break-mobile)
             width: 90%
 
-.spacer
-    height: 1rem
-
 ul
     list-style: none
     margin: 0
@@ -154,9 +151,11 @@ ul
     max-width: 60%
     li
         margin: 0
-        i
-            font-size: 2rem
-            display: block
+        a
+            padding: 0
+            i
+                font-size: 2rem
+                display: block
 
 .skills
     background: #f8f8f8
