@@ -206,7 +206,7 @@ ul
     figure
         width: 130%
         display: block
-        margin: 1rem auto 2rem
+        margin: 1rem auto 0 
         @extend %prop-transition
         border-radius: 1rem
         padding: 2rem 1.5rem 1.5rem
@@ -313,4 +313,7 @@ footer
 .spacer
     height: .1rem
     @media only screen and (min-width: $break-mobile)
-        
+    
+@media only screen and (min-width: $break-mobile)
+    .d-mob
+        display: none

@@ -234,7 +234,7 @@ ul {
 .main figure {
   width: 130%;
   display: block;
-  margin: 1rem auto 2rem;
+  margin: 1rem auto 0;
   border-radius: 1rem;
   padding: 2rem 1.5rem 1.5rem;
   box-sizing: border-box;
@@ -358,5 +358,9 @@ footer {
 
 .spacer {
   height: 0.1rem; }
+
+@media only screen and (min-width: 960px) {
+  .d-mob {
+    display: none; } }
 
 /*# sourceMappingURL=master.css.map */
