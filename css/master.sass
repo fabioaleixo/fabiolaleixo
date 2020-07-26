@@ -55,7 +55,9 @@ h3
     +text-base($heading-font,1.2rem,$primary-color,400,3rem 0 1rem,0 0 .5rem,0)
 
 h4
-    +text-base($heading-font,2rem,$primary-color,400,4rem 0 2rem,0 0 .5rem,0)
+    +text-base($heading-font,1.8rem,$primary-color,400,4rem 0 2rem,0 0 .5rem,0)
+    @media only screen and (min-width: $break-mobile)
+        +text-base($heading-font,2rem,$primary-color,400,4rem 0 2rem,0 0 .5rem,0)
 
 a
     +text-base($text-font,1.2rem,$primary-color,400,1.5rem 0,1rem 0,0)
@@ -206,7 +208,7 @@ ul
     figure
         width: 130%
         display: block
-        margin: 1rem auto 0 
+        margin: 1rem auto 2rem
         @extend %prop-transition
         border-radius: 1rem
         padding: 2rem 1.5rem 1.5rem
@@ -300,6 +302,8 @@ footer
         margin: 0 1rem 0 0
     @media only screen and (min-width: $break-mobile)
         display: none
+    &.lmt
+        margin-top: 2rem
 
 .font-adjust
     font-size: 1rem

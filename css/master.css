@@ -49,13 +49,23 @@ h3 {
 
 h4 {
   font-family: "Fira Code";
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #00939c;
   font-weight: 400;
   margin: 4rem 0 2rem;
   border-bottom: 0;
   box-sizing: border-box;
   padding: 0 0 0.5rem; }
+  @media only screen and (min-width: 960px) {
+    h4 {
+      font-family: "Fira Code";
+      font-size: 2rem;
+      color: #00939c;
+      font-weight: 400;
+      margin: 4rem 0 2rem;
+      border-bottom: 0;
+      box-sizing: border-box;
+      padding: 0 0 0.5rem; } }
 
 a {
   font-family: "PT Sans Narrow";
@@ -234,7 +244,7 @@ ul {
 .main figure {
   width: 130%;
   display: block;
-  margin: 1rem auto 0;
+  margin: 1rem auto 2rem;
   border-radius: 1rem;
   padding: 2rem 1.5rem 1.5rem;
   box-sizing: border-box;
@@ -345,6 +355,8 @@ footer {
   @media only screen and (min-width: 960px) {
     .btn-skills {
       display: none; } }
+  .btn-skills.lmt {
+    margin-top: 2rem; }
 
 .font-adjust {
   font-size: 1rem; }
