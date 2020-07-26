@@ -24,13 +24,13 @@ h1 {
   h1 span {
     font-size: 2rem;
     display: block;
-    margin: 2rem 0 0; }
+    margin: 1.5rem 0 0; }
 
 h2 {
   font-family: "Fira Code";
   font-size: 1.5rem;
   color: #00939c;
-  font-weight: 400;
+  font-weight: 500;
   margin: 4rem 0 2rem;
   border-bottom: 0.05rem #006167 solid;
   box-sizing: border-box;
@@ -41,7 +41,7 @@ h3 {
   font-family: "Fira Code";
   font-size: 1.2rem;
   color: #00939c;
-  font-weight: 400;
+  font-weight: 500;
   margin: 3rem 0 1rem;
   border-bottom: 0;
   box-sizing: border-box;
@@ -51,7 +51,7 @@ h4 {
   font-family: "Fira Code";
   font-size: 1.8rem;
   color: #00939c;
-  font-weight: 400;
+  font-weight: 500;
   margin: 4rem 0 2rem;
   border-bottom: 0;
   box-sizing: border-box;
@@ -61,7 +61,7 @@ h4 {
       font-family: "Fira Code";
       font-size: 2rem;
       color: #00939c;
-      font-weight: 400;
+      font-weight: 500;
       margin: 4rem 0 2rem;
       border-bottom: 0;
       box-sizing: border-box;
@@ -93,12 +93,38 @@ p {
   line-height: 1.8rem;
   letter-spacing: 0.07rem; }
 
+.working {
+  box-sizing: border-box;
+  border-top: 0.05rem #006167 solid;
+  margin: 1.5rem 1.2rem; }
+  .working h2 {
+    font-family: "Fira Code";
+    font-size: 0.9rem;
+    color: #999;
+    font-weight: 300;
+    margin: 0;
+    border-bottom: 0;
+    box-sizing: border-box;
+    padding: 0.5rem 0; }
+  .working a {
+    font-family: "Fira Code";
+    font-size: 0.9rem;
+    color: #00939c;
+    font-weight: 500;
+    margin: 0;
+    border-bottom: 0;
+    box-sizing: border-box;
+    padding: 0; }
+    .working a:hover {
+      color: #00c6d2; }
+
 .showit {
   background: #006167;
   color: #fff;
   text-align: center;
-  padding: 1rem;
+  padding: 1rem 2rem;
   font-size: 1.4rem;
+  margin: 3rem 0;
   font-weight: 300;
   border-radius: 0.5rem; }
   .showit:hover {
