@@ -14,8 +14,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fábio Aleixo Web Developer</title>
     <script src="https://kit.fontawesome.com/f8c389dddb.js" crossorigin="anonymous"></script>
-    <meta name="description" content="This is Fábio Aleixo's senior web developer web site. I develope web sites for about 15 years now. Contact me to build yours.">
+    <meta name="description" content="This is Fábio Aleixo's senior web developer and Wordpress specialist website. I develope web sites for about 15 years now. Contact me to build yours.">
     <meta name="author" content="Fábio Aleixo">
+    <meta property="og:url" content="https://www.fabioaleixo.dev.br/" />
+    <meta property="og:type" content="website" />
+    <meta property="fb:app_id" content="288175265741958" />
+    <meta property="og:title" content="Fábio Aleixo's senior web developr and Wordpress specialist website" />
+    <meta property="og:description" content="I develope web sites for about 15 years now. Contact me to build yours." />
+    <meta property="og:image" content="https://www.fabioaleixo.dev.br/imagens/fabioaleixo-facebook-opengraph.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" type="text/css" href="css/master.css">
     <link rel="icon" href="imagens/favicon-32.png" sizes="32x32">
@@ -25,21 +33,43 @@
 </head>
 <body>
 
+    <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId      : '288175265741958',
+            cookie     : true,
+            xfbml      : true,
+            version    : 'v7.0'
+          });
+            
+          FB.AppEvents.logPageView();   
+            
+        };
+      
+        (function(d, s, id){
+           var js, fjs = d.getElementsByTagName(s)[0];
+           if (d.getElementById(id)) {return;}
+           js = d.createElement(s); js.id = id;
+           js.src = "https://connect.facebook.net/en_US/sdk.js";
+           fjs.parentNode.insertBefore(js, fjs);
+         }(document, 'script', 'facebook-jssdk'));
+      </script>
+
     <header id="btt"></header>
     <section class="holder">
         <section class="profile">
             <img src="imagens/fabioaleixo-profile-picture.jpg" alt="fábio aleixo's profile pictuer" title="fábio aleixo's profile pictuer">
             <h1>Fábio Aleixo <span>Senior Web Developer</span></h1>
             <div class="working"><h2>Freelancer at <a href="https://jussi.com.br/" target="_blank">Jüssi</a></h2></div>
-            <a href="#skills"><h2 class="showit"><i class="fab fa-wordpress"></i> Wordpress Fullstack Developer</h2></a>
-            <a href="#case" class="btn case"><i class="fas fa-briefcase"></i> Latest main case</a>
+            <a href="#skills" onclick='FB.AppEvents.logEvent("btnWordpress")'><h2 class="showit"><i class="fab fa-wordpress"></i> Wordpress Fullstack Developer</h2></a>
+            <a href="#case" class="btn case" onclick='FB.AppEvents.logEvent("btnCase")'><i class="fas fa-briefcase"></i> Latest main case</a>
             <h2>Contacts</h2>
             <ul>
                 <li><a href="mailto:fa@fabioleixo.dev.br" class="contacts">fa@fabioaleixo.dev.br</a></li>
                 <li><a href="tel:+55-11-99491-5161" class="contacts">+55 (11) 9 9491-5161</a></li>
-                <li class="spacer"></li>
-                <li><a href="https://wa.me/5511994915161" class="btn font-adjust"><i class="fas fa-clock fa-spin"></i> Contact me now on Whatsapp!</a></li>
-                <li><a href="https://wa.me/?text=Olá!%20Gostaria%20de%20indicar%20o%20Fábio%20Aleixo,%20desenvolvedor%20web,%20para%20você!%20https://www.fabioaleixo.dev.br" class="btn font-adjust"><i class="fab fa-whatsapp"></i> Tell someone through Whatsapp</a></li>
+                <li class="spacer d-mob"></li>
+                <li class="d-mob" onclick='FB.AppEvents.logEvent("btnWhatsapp")'><a href="https://wa.me/5511994915161" class="btn font-adjust"><i class="fas fa-clock fa-spin"></i> Contact me now on Whatsapp!</a></li>
+                <li class="d-mob" onclick='FB.AppEvents.logEvent("btnndiqueWhatsapp")'><a href="https://wa.me/?text=Olá!%20Gostaria%20de%20indicar%20o%20Fábio%20Aleixo,%20desenvolvedor%20web,%20para%20você!%20https://www.fabioaleixo.dev.br" class="btn font-adjust"><i class="fab fa-whatsapp"></i> Tell someone through Whatsapp</a></li>
             </ul> 
             <h2>Social profiles</h2>
             <ul class="social">
@@ -50,7 +80,7 @@
             <h2>Fábio Aleixo's resume</h2>
             <a href="assets/fabio-aleixo-resume.pdf" target="_blank" class="btn"><i class="fas fa-file-pdf"></i> Resume (English)</a>
             <a href="assets/fabio-aleixo-cv.pdf" target="_blank" class="btn"><i class="fas fa-file-pdf"></i> Currículo (português)</a>
-            <a href="#skills" class="btn btn-skills"><i class="far fa-hand-point-down"></i> Fábio Aleixo's skills</a>
+            <a href="#skills" class="btn btn-skills" onclick='FB.AppEvents.logEvent("btnWordpress")'><i class="far fa-hand-point-down"></i> Fábio Aleixo's skills</a>
         </section>
         <section class="main">
             <h4>Fábio Aleixo's profile</h4>
@@ -66,8 +96,8 @@
             <p>He had already done a benchmark work about the website's look & feel. We decided to use <a href="http://squarespace.com/" target="_blank">Squarespace</a>, because it has been built to elaborate high performance searchable websites, it has attractive templates and it is easy and fast for non-programmers to keep the website updated.</p>
             <p>Hope you enjoy the final product for <a href="https://www.thomasrera.com/" target="_blank">Thomas Rera</a> and get in touch with him if you need a wedding photographer, he's great!</p>
             <a href="https://www.thomasrera.com/" target="_blank"><figure><img src="imagens/fabioaleixo-thomasrera-case.jpg" alt="Thomas Rera's web site picture" title="Thomas Rera site developed by Fábio Aleixo"><figcaption>Visit Thomas Rera's website</figcaption></figure></a>
-            <a href="https://wa.me/5511994915161" class="btn font-adjust d-mob"><i class="fas fa-clock fa-spin"></i> Contact me now on Whatsapp!</a>
-            <a href="#skills" class="btn btn-skills lmt"><i class="far fa-hand-point-down"></i> Fábio Aleixo's skills</a>
+            <a href="https://wa.me/5511994915161" class="btn font-adjust d-mob" onclick='FB.AppEvents.logEvent("btnWhatsapp")'><i class="fas fa-clock fa-spin"></i> Contact me now on Whatsapp!</a>
+            <a href="#skills" class="btn btn-skills lmt" onclick='FB.AppEvents.logEvent("btnWordpress")'><i class="far fa-hand-point-down"></i> Fábio Aleixo's skills</a>
             <h4>Fábio Aleixo's work experience</h4>
             <div class="cards">
                 <div class="card">
