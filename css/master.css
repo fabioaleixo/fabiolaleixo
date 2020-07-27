@@ -328,7 +328,13 @@ ul {
 
 header {
   background: #006167;
-  height: 0.5rem; }
+  height: 0.5rem;
+  -webkit-box-shadow: 0 0px 100px 70px rgba(0, 198, 210, 0.7);
+  box-shadow: 0 0px 100px 70px rgba(0, 198, 210, 0.7); }
+  @media only screen and (min-width: 1200px) {
+    header {
+      -webkit-box-shadow: 0 0px 300px 70px rgba(0, 198, 210, 0.7);
+      box-shadow: 0 0px 300px 70px rgba(0, 198, 210, 0.7); } }
 
 footer {
   background: #006167;
