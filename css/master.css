@@ -410,5 +410,64 @@ footer {
 @media only screen and (min-width: 960px) {
   .d-mob {
     display: none; } }
+.card-case {
+  border: 0.05rem #ccc solid;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+  display: block; }
+  .card-case i {
+    font-size: 1rem;
+    margin: 1rem 0; }
+  .card-case a {
+    font-size: 1rem;
+    margin: 0.5rem 0; }
+  @media only screen and (min-width: 960px) {
+    .card-case {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 1rem 1.5rem 1.5rem;
+      align-items: baseline; } }
+  .card-case p {
+    margin: 0.5rem 0;
+    font-size: 1rem; }
+    @media only screen and (min-width: 960px) {
+      .card-case p {
+        margin: 0 0 1rem; } }
+  .card-case div {
+    width: 100%;
+    border-top: 0.05rem #ccc solid; }
+    .card-case div:first-child {
+      border: 0; }
+  .card-case ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .card-case ul li {
+      margin: 0.5rem 0;
+      font-size: 1rem; }
+      .card-case ul li i {
+        margin: 0 0.3rem 0 0; }
+  @media only screen and (min-width: 960px) {
+    .card-case div {
+      width: 25%;
+      border: 0;
+      text-align: right; }
+      .card-case div:first-child {
+        width: 50%;
+        text-align: left; }
+      .card-case div:last-child {
+        width: 100%;
+        text-align: left;
+        border-top: 0.05rem #ccc solid; }
+        .card-case div:last-child p {
+          margin: 1rem 0 0 !important; }
+        .card-case div:last-child ul {
+          display: flex;
+          justify-content: space-between;
+          margin: 0.3rem 0 0; }
+          .card-case div:last-child ul li {
+            margin: 0; } }
 
 /*# sourceMappingURL=master.css.map */
