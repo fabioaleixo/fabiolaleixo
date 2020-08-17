@@ -453,12 +453,14 @@ footer {
         margin: 0 0.3rem 0 0; }
   @media only screen and (min-width: 960px) {
     .card-case div {
-      width: 25%;
+      width: 20%;
       border: 0;
       text-align: right; }
       .card-case div:first-child {
         width: 50%;
         text-align: left; }
+      .card-case div:nth-child(2) {
+        width: 30%; }
       .card-case div:last-child {
         width: 100%;
         text-align: left;
