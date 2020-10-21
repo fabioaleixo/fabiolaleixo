@@ -140,6 +140,8 @@ p
         width: 100%
         h4:first-child
             margin-top: 0
+        h2
+            border-bottom: 0
     @media only screen and (min-width: $break-mobile)
         .profile
             width: 25%
@@ -290,6 +292,9 @@ footer
     p
         +text-base($text-font,1rem,$contrast-color,400,0,0,0)
         text-align: center
+    a
+        color: $contrast-color
+        font-size: 1rem
 
 .btn-btt
     width: 80%
@@ -382,8 +387,14 @@ footer
         li
             margin: .5rem 0
             font-size: 1rem
+            p
+                margin: 0
             i
                 margin: 0 .3rem 0 0
+    .list-2-col
+        columns: 2
+        -webkit-columns: 2
+        -moz-columns: 2
     @media only screen and (min-width: $break-mobile)
         div
             width: 20%

@@ -172,6 +172,8 @@ p {
     width: 100%; }
     .holder .main h4:first-child {
       margin-top: 0; }
+    .holder .main h2 {
+      border-bottom: 0; }
   @media only screen and (min-width: 960px) {
     .holder .profile {
       width: 25%; }
@@ -354,6 +356,9 @@ footer {
     box-sizing: border-box;
     padding: 0;
     text-align: center; }
+  footer a {
+    color: #fff;
+    font-size: 1rem; }
 
 .btn-btt {
   width: 80%;
@@ -449,8 +454,14 @@ footer {
     .card-case ul li {
       margin: 0.5rem 0;
       font-size: 1rem; }
+      .card-case ul li p {
+        margin: 0; }
       .card-case ul li i {
         margin: 0 0.3rem 0 0; }
+  .card-case .list-2-col {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2; }
   @media only screen and (min-width: 960px) {
     .card-case div {
       width: 20%;
